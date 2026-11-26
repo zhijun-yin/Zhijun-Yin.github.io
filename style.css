@@ -3,7 +3,7 @@
   --muted: #62677f;
   --blue: #5b5ca6;
   --line: #daddf0;
-  --tint: #e9e4f8;
+  --tint: rgba(76, 48, 160, 0.08);
   font-family: Inter, "Segoe UI", "Microsoft YaHei", sans-serif;
   color: var(--ink);
   font-size: 16px;
@@ -18,12 +18,12 @@ body {
   background:
     radial-gradient(
       ellipse at top right,
-      rgba(172, 185, 245, 0.45),
+      rgba(76, 91, 190, 0.12),
       transparent 55%
     ),
     radial-gradient(
       ellipse at bottom left,
-      rgba(198, 179, 235, 0.45),
+      rgba(76, 48, 160, 0.12),
       transparent 55%
     ),
     #f7f8fd;
@@ -720,7 +720,12 @@ html[lang="zh-CN"] .bio {
   padding: 36px 32px;
   gap: 40px;
   grid-template-columns: 210px minmax(0, 1fr);
-  background: linear-gradient(120deg, #ffffff 3%, #f5f5fd 52%, #e0e5fa 100%);
+  background: linear-gradient(
+    120deg,
+    #ffffff 3%,
+    #f5f5fd 52%,
+    rgba(76, 48, 160, 0.1) 100%
+  );
   border: 1px solid var(--line);
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(69, 67, 121, 0.035);
@@ -741,8 +746,8 @@ html[lang="zh-CN"] .bio {
   line-height: 1.5;
 }
 .bio-details li:nth-child(even) {
-  background: #e9e4f8;
-  color: #65548e;
+  background: rgba(76, 48, 160, 0.09);
+  color: #4c3090;
 }
 .publication {
   background: #fff;
@@ -757,7 +762,7 @@ html[lang="zh-CN"] .bio {
 }
 .paper-meta span {
   color: var(--blue);
-  background: #efecfa;
+  background: rgba(76, 48, 160, 0.07);
 }
 .paper-links a,
 .paper-links button {
