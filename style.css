@@ -589,7 +589,7 @@ html[lang="zh-CN"] .bio {
 }
 .bio-details {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr;
   gap: 32px;
   margin-top: 28px;
 }
@@ -694,7 +694,7 @@ html[lang="zh-CN"] .bio {
     font-size: 26px;
   }
   .bio-details {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 22px;
   }
   .awards .honors-list li {
