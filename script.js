@@ -33,12 +33,23 @@ citationToggle.addEventListener("click", () => {
   citationToggle.setAttribute("aria-expanded", String(!citation.hidden));
 });
 
+let copyFeedbackAnimation;
+
 document.querySelector("#copy-citation").addEventListener("click", async () => {
   const code = citation.querySelector("code");
   const status = document.querySelector("#copy-status");
+  copyFeedbackAnimation?.cancel();
   try {
     await navigator.clipboard.writeText(code.textContent);
     status.textContent = language === "zh" ? "已复制" : "Copied";
+    copyFeedbackAnimation = status.animate([{ opacity: 1 }, { opacity: 0 }], {
+      delay: 3000,
+      duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? 0
+        : 800,
+      easing: "ease-out",
+      fill: "forwards",
+    });
   } catch {
     const selection = window.getSelection();
     const range = document.createRange();
