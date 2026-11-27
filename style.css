@@ -905,7 +905,9 @@ footer {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
-  transition: background 200ms ease, border-color 200ms ease;
+  transition:
+    background 200ms ease,
+    border-color 200ms ease;
 }
 .paper-links svg {
   flex: 0 0 18px;
