@@ -884,3 +884,36 @@ footer {
     padding: 4px 18px;
   }
 }
+
+/* Icon-labelled publication actions. */
+.paper-links {
+  gap: 9px;
+  align-items: center;
+}
+.paper-links a,
+.paper-links button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 9px 16px;
+  border: 1px solid #343b50;
+  border-radius: 999px;
+  background: #343b50;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: background 200ms ease, border-color 200ms ease;
+}
+.paper-links svg {
+  flex: 0 0 18px;
+}
+.paper-links a:hover,
+.paper-links button:hover,
+.paper-links button[aria-expanded="true"] {
+  background: #4764a8;
+  border-color: #4764a8;
+  color: #fff;
+}
