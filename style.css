@@ -1,9 +1,9 @@
 :root {
   --ink: #292d45;
   --muted: #62677f;
-  --blue: #5b5ca6;
-  --line: #daddf0;
-  --tint: rgba(76, 48, 160, 0.08);
+  --blue: #4764a8;
+  --line: #d9e2f0;
+  --tint: rgba(62, 65, 168, 0.08);
   font-family: Inter, "Segoe UI", "Microsoft YaHei", sans-serif;
   color: var(--ink);
   font-size: 16px;
@@ -17,16 +17,16 @@ body {
   margin: 0;
   background:
     radial-gradient(
-      ellipse at top right,
-      rgba(76, 91, 190, 0.12),
+      ellipse at top left,
+      rgba(42, 108, 196, 0.15),
       transparent 55%
     ),
     radial-gradient(
-      ellipse at bottom left,
-      rgba(76, 48, 160, 0.12),
+      ellipse at bottom right,
+      rgba(57, 62, 170, 0.16),
       transparent 55%
     ),
-    #f7f8fd;
+    #f7f9fd;
   background-attachment: fixed;
 }
 a {
@@ -740,9 +740,9 @@ html[lang="zh-CN"] .bio {
   grid-template-columns: 210px minmax(0, 1fr);
   background: linear-gradient(
     120deg,
-    #ffffff 3%,
-    #f5f5fd 52%,
-    rgba(76, 48, 160, 0.1) 100%
+    rgba(232, 241, 253, 0.92) 0%,
+    rgba(247, 249, 255, 0.96) 45%,
+    rgba(218, 223, 248, 0.94) 100%
   );
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -758,14 +758,14 @@ html[lang="zh-CN"] .bio {
 .bio-details li {
   padding: 6px 11px;
   border-radius: 8px;
-  background: #e3e9fb;
-  color: #50578f;
+  background: #e5edfb;
+  color: #405f98;
   font-size: 14px;
   line-height: 1.5;
 }
 .bio-details li:nth-child(even) {
-  background: rgba(76, 48, 160, 0.09);
-  color: #4c3090;
+  background: rgba(62, 65, 168, 0.09);
+  color: #454a91;
 }
 .publication {
   background: #fff;
@@ -780,7 +780,7 @@ html[lang="zh-CN"] .bio {
 }
 .paper-meta span {
   color: var(--blue);
-  background: rgba(76, 48, 160, 0.07);
+  background: rgba(62, 65, 168, 0.07);
 }
 .paper-links a,
 .paper-links button {
@@ -791,7 +791,7 @@ html[lang="zh-CN"] .bio {
   margin-left: 8px;
   padding: 0 0 20px 28px;
   border: 0;
-  border-left: 2px solid #c9c7e8;
+  border-left: 2px solid #c3d1ea;
   grid-template-columns: 155px minmax(0, 1fr);
   align-items: start;
 }
@@ -801,7 +801,7 @@ html[lang="zh-CN"] .bio {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #9090c7;
+  background: #798fc0;
   border: 3px solid #f5f6fc;
   left: -9px;
   top: 23px;
