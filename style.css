@@ -970,14 +970,33 @@ footer {
   padding: 7px 17px;
 }
 .arxiv-button span {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 400;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
 }
 .arxiv-button img {
   flex: 0 0 18px;
   width: 18px;
   height: 22px;
+  object-fit: contain;
+}
+
+.paper-links .arxiv-button {
+  gap: 8px;
+  padding: 9px 16px;
+}
+.arxiv-button img {
+  height: 18px;
+}
+.school-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.school-logo {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
   object-fit: contain;
 }
