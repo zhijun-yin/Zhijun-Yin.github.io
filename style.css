@@ -964,3 +964,20 @@ footer {
     justify-content: flex-start;
   }
 }
+
+.paper-links .arxiv-button {
+  gap: 9px;
+  padding: 7px 17px;
+}
+.arxiv-button span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.arxiv-button img {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 22px;
+  object-fit: contain;
+}
