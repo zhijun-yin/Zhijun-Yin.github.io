@@ -919,3 +919,48 @@ footer {
   border-color: #4764a8;
   color: #fff;
 }
+
+.profile-links {
+  align-items: center;
+  gap: 10px;
+}
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 100%;
+  min-height: 40px;
+  padding: 9px 12px;
+  border: 1px solid #343b50;
+  border-radius: 999px;
+  background: #343b50;
+  color: white;
+  font-size: 12px;
+  line-height: 1.5;
+  transition: background 200ms ease;
+}
+.profile-links a:hover {
+  background: #4764a8;
+  border-color: #4764a8;
+}
+.profile-links svg,
+.profile-links img {
+  flex: 0 0 18px;
+}
+.profile-links span {
+  overflow-wrap: anywhere;
+}
+.brand-icon,
+.arxiv-button img {
+  filter: brightness(0) invert(1);
+}
+.paper-links .arxiv-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media (max-width: 650px) {
+  .profile-links {
+    justify-content: flex-start;
+  }
+}
